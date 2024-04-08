@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+    padding: 30px;
+    gap: 20px;
+    place-content: center;
+    background-color: white;
+}
+
+main div{
+    border-radius: 20px;
+}
+
+.griditem1{
+    grid-area: 1/1/2/4;
+    background-color: red;
+}
+
+.griditem2{
+    grid-area: 2/1/4/2;
+    background-color: blue;
+}
+
+.griditem3{
+    grid-area: 2/2/3/4;
+    background-color: green;
+}
+
+.griditem4{
+    grid-area: 3/2/4/3;
+    background-color: purple;
+}
+
+.griditem5{
+    grid-area: 3/3/3/4;
+    background-color: purple;
+}
